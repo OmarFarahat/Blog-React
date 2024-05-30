@@ -1,13 +1,71 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(49, 103, 219);
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.posts {
+  padding: 2px;
+  margin: 2px;
+  border: thin solid black;
+  border-radius: 5px;
+  color: rgb(13, 17, 15);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.editbutton {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  right: 280px;
+  bottom: 140px;
+  background-color: blue;
+  border-radius: 5px;
+  border-color: blue;
+  color: white;
+}
+.deletebutton {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  right: 90px;
+  bottom: 140px;
+  background-color: red;
+  border-radius: 5px;
+  border-color: red;
+  color: white;
+}
+.addpost {
+  position: absolute;
+  bottom: 5%;
+  right: 90px;
+}
+.addpostbutton {
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  margin: 2rem;
+}
+.submitpost {
+  background-color: green;
+  color: white;
 }
